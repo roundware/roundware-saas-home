@@ -60,3 +60,4 @@ Drafted as reasonable defaults, for review:
 - Massachusetts law and courts.
 - Security questionnaires answered once a year; no on-site audits.
 - A refund if an organization leaves over a new service provider.
+- Paid plans: cancel any time; paid features last to the end of the period paid for; no refund for the rest of a period ("if something went wrong on our side, write to us"); 30 days' notice of price changes.

@@ -11,6 +11,7 @@ These terms are between **Halsey Solutions, LLC** ("we", "Roundware") and the or
 - **You decide** the terms between you and your participants, including who owns their recordings. You're responsible for getting their agreement, and parental permission where children take part.
 - Don't use Roundware for anything illegal or harmful (the list is below).
 - Roundware is run by a very small team, with no guaranteed uptime. Read [How Roundware is run](how-roundware-is-run.md) before relying on it for something critical.
+- Paid plans (when there are any) can be cancelled at any time, and stay active until the end of the period you paid for.
 - You can export your data and leave at any time. After you close your account, we keep your data for 90 days, then delete it.
 - If we change these terms in a way that matters, we'll tell you at least 30 days ahead.
 - Massachusetts law applies.
@@ -61,6 +62,16 @@ If a project breaks these rules, we may hide content or suspend the account. Whe
 ## 5. Plans and fees
 
 Roundware's plans have limits, for example on storage or the number of projects. Paid plans aren't offered yet. Before we start charging, we'll tell you at least 30 days ahead, and we won't charge you for anything without your agreement.
+
+Once paid plans are offered:
+
+- **You can cancel at any time,** in the admin, with no fee and no need to give a reason.
+- **You keep everything you paid for until the end of the billing period.** After that you're not charged again, and your organization moves to the free plan.
+- **Cancelling deletes nothing.** Your projects and contributions stay, and people can still listen to them. If you're over the free plan's limits, new contributions pause: participants see that the project isn't taking recordings right now. They resume once you're under the limits again, or choose a paid plan.
+- **We don't refund the rest of a period you've already paid for.** If something went wrong on our side, write to us and we'll make it right.
+- **Prices:** if we change a plan's price, we'll tell you at least 30 days before it affects you, and you can cancel before then.
+
+Cancelling a paid plan is different from closing your account (section 7). Closing your account starts the 90 days before your data is deleted.
 
 ## 6. Our service
 
