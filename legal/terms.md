@@ -107,7 +107,7 @@ This section is the most legal-sounding one, because it has to be precise.
 
 ## 9. The software is open source
 
-Roundware is open source. These terms cover the hosted service at roundware.app, not the software itself.
+Roundware has been open source since it began in 2008, and still is. These terms cover the hosted service at roundware.app, not the software itself.
 
 That matters for you because you're never tied to us:
 
