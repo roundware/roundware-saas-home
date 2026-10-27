@@ -59,7 +59,7 @@ Roundware is a small operation. It's run by one person, with no outside funding,
 
 A one-person service could end one day, through illness, money, or something else. Ideally there'd be a company behind it with a succession plan; there isn't. This is what we've done instead:
 
-- **Everything can be exported**, in formats any software can read: spreadsheets (CSV) and JSON for contributions and settings, and the original audio files and photos. [Not built yet.]
+- **Everything can be exported**, in formats any software can read: spreadsheets (CSV) and JSON for contributions and settings, and the original audio files and photos. An export can be imported into any Roundware server.
 - **The software is open source.** Anyone can run their own Roundware server and load an export into it. [Planned: the current version is being prepared for public release, with instructions.]
 - **At least 90 days' notice** before roundware.app shuts down, to export.
 

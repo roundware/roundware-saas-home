@@ -89,7 +89,7 @@ Cancelling a paid plan is different from closing your account (section 7). Closi
 
 ## 7. Leaving
 
-- You can export all your data at any time, in the admin: contributions and their details as a spreadsheet (CSV) and as JSON, your projects' settings as JSON, and every audio file and photo as it was uploaded. Nothing is locked in a format only Roundware can read. [Not built yet.]
+- You can export all your data at any time, in the admin: contributions and their details as a spreadsheet (CSV) and as JSON, your projects' settings as JSON, and every audio file and photo as it was uploaded. Nothing is locked in a format only Roundware can read. An export can be imported back into Roundware, here or on another server.
 - You can close your account at any time.
 - After you close it, we keep your data for **90 days**, so you can export it or change your mind. Then we delete it for good. Deleted data is gone from our backups within a further 7 days.
 - We may close an account that breaks these terms (section 4), or that's been inactive for a long time. Before closing an inactive account, we'll write to its owners at least 60 days ahead.
