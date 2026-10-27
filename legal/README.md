@@ -32,8 +32,8 @@ Nothing here is in effect yet. Before publishing:
 
 The documents describe Roundware as it will be once these are done. Each is marked [Planned] or [Not built yet] where it appears.
 
-1. **Random names for uploaded files.** Today they're named by date and time, so they could be guessed (How Roundware is run).
-2. **Delete a participant.** Their contributions, files and contact details, as an explicit "delete for good" in the admin (withdrawal, Privacy §9).
+1. ~~**Random names for uploaded files.**~~ Done 2026-10-27: what and when, plus a random part (fill in [DEPLOY DATE] in How Roundware is run when deployed).
+2. ~~**Delete a participant.**~~ Done 2026-10-27: the participant's page in the admin, "Delete for good", for this project or all of the organization's.
 3. **Clear listening history and events.** Organizations can delete these for a project (Privacy §8).
 4. **Google Analytics asks first.** A plain prompt; GA loads only on yes. A project setting lets an organization handle consent itself (Privacy §7).
 5. **Record participants' agreement.** When, and to which version of the project's terms (How Roundware is run).

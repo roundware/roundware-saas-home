@@ -41,7 +41,7 @@ Roundware is a small operation. It's run by one person, with no outside funding,
 
 **Backups.** Our database provider (DigitalOcean) backs up the database daily and keeps each backup for 7 days. **Uploaded files (audio, photos) aren't backed up yet.** If the file storage itself lost data, those files couldn't be restored. Ideally there would be a second copy elsewhere; it's planned, but not done. *What it means:* keep your own copy of contributions that matter to you. You can download them from the admin.
 
-**Files are reachable by link.** Contribution files are stored at web addresses that anyone with the link can open, without signing in. That's what lets them play on a project's map, a share page or a podcast's website. [After the planned fix:] The addresses are random and can't be guessed. *What it means:* a file someone has already found the link to stays reachable until the contribution is deleted along with its files.
+**Files are reachable by link.** Contribution files are stored at web addresses that anyone with the link can open, without signing in. That's what lets them play on a project's map, a share page or a podcast's website. Each address includes a long random part, so it can't be guessed or worked out from another one, and the list of files isn't public. *What it means:* anyone who's been given a file's link can open it, until the contribution is deleted along with its files. (Files uploaded before [DEPLOY DATE] have older, more predictable names.)
 
 **Deleting a contribution keeps its file by default.** When a team member deletes a contribution, the file is kept unless they choose "delete for good". This protects against mistakes; recordings can't be re-made. If you want a file gone, choose "delete for good", or ask us.
 
