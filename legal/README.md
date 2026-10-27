@@ -37,7 +37,7 @@ The documents describe Roundware as it will be once these are done. Each is mark
 3. **Clear listening history and events.** Organizations can delete these for a project (Privacy §8).
 4. **Google Analytics asks first.** A plain prompt; GA loads only on yes. A project setting lets an organization handle consent itself (Privacy §7).
 5. **Record participants' agreement.** When, and to which version of the project's terms (How Roundware is run).
-6. **Export everything.** An organization's data and media in one download (Terms §7, DPA §8). Today there's a CSV of contributions and single-file downloads.
+6. **Export everything, easily.** An organization's data in open formats in one download: contributions and their details as CSV and JSON, projects' settings as JSON, and every original audio file and photo (Terms §7, DPA §8). Today there's a CSV of contributions and single-file downloads. It should load into a self-hosted Roundware (item 14).
 7. **Close an account.** Owners close their organization's account. It's held 90 days, then deleted with its media and activity log. Team members can also delete their own accounts (Terms §7).
 8. **The activity log goes with its organization.** Today it outlives a deleted organization, with team members' emails.
 9. **Self-host the map's cluster images.** They're loaded from github.com, which then sees visitors' IP addresses.
@@ -45,6 +45,8 @@ The documents describe Roundware as it will be once these are done. Each is mark
 11. **The participant terms template offered** when an organization writes its project's terms.
 12. **Pages on roundware.app/legal** showing these files.
 13. **Backups of uploaded files.** When they're done, update How Roundware is run, Privacy §8 and Terms §6.
+14. **Release the v3 server and admin as open source**, with instructions for running your own and importing an export (Terms §7 and §9, How Roundware is run).
+15. **Cancelling a paid plan over the free limits** (Terms §5): reminder emails; after 60 days the projects over the limits go offline (the organization picks which, else the most recently changed stay); 90 days later they're deleted; re-subscribing brings everything back.
 
 ### Choices made in drafting (easy to change)
 
@@ -60,4 +62,4 @@ Drafted as reasonable defaults, for review:
 - Massachusetts law and courts.
 - Security questionnaires answered once a year; no on-site audits.
 - A refund if an organization leaves over a new service provider.
-- Paid plans: cancel any time; paid features last to the end of the period paid for; no refund for the rest of a period ("if something went wrong on our side, write to us"); 30 days' notice of price changes.
+- Paid plans (Halsey): cancel any time; paid features last to the end of the period paid for; no refunds, but "write to us, we're nice and reasonable"; over the free limits: 60 days' grace, then offline, then deleted 90 days later. 30 days' notice of price changes (default).

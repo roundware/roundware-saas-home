@@ -11,8 +11,10 @@ These terms are between **Halsey Solutions, LLC** ("we", "Roundware") and the or
 - **You decide** the terms between you and your participants, including who owns their recordings. You're responsible for getting their agreement, and parental permission where children take part.
 - Don't use Roundware for anything illegal or harmful (the list is below).
 - Roundware is run by a very small team, with no guaranteed uptime. Read [How Roundware is run](how-roundware-is-run.md) before relying on it for something critical.
-- Paid plans (when there are any) can be cancelled at any time, and stay active until the end of the period you paid for.
-- You can export your data and leave at any time. After you close your account, we keep your data for 90 days, then delete it.
+- Paid plans (when there are any) can be cancelled at any time, and stay active until the end of the period you paid for. If you're then over the free plan's limits, you get 60 days to sort it out before anything goes offline, and nothing is deleted without plenty of warning.
+- You can export all your data and leave at any time, in open formats (spreadsheets, JSON and the original files).
+- Roundware is open source. If roundware.app ever stops, you can run Roundware yourself and carry on.
+- After you close your account, we keep your data for 90 days, then delete it.
 - If we change these terms in a way that matters, we'll tell you at least 30 days ahead.
 - Massachusetts law applies.
 
@@ -67,8 +69,14 @@ Once paid plans are offered:
 
 - **You can cancel at any time,** in the admin, with no fee and no need to give a reason.
 - **You keep everything you paid for until the end of the billing period.** After that you're not charged again, and your organization moves to the free plan.
-- **Cancelling deletes nothing.** Your projects and contributions stay, and people can still listen to them. If you're over the free plan's limits, new contributions pause: participants see that the project isn't taking recordings right now. They resume once you're under the limits again, or choose a paid plan.
-- **We don't refund the rest of a period you've already paid for.** If something went wrong on our side, write to us and we'll make it right.
+- **If you fit the free plan,** nothing changes: your projects stay up as they are.
+- **If you're over the free plan's limits** when the paid period ends:
+  - New contributions pause straight away. People can still listen, and participants see that the project isn't taking recordings right now.
+  - **You have 60 days** to export, delete down to the limits, or choose a paid plan again. We'll email you reminders along the way.
+  - **After 60 days,** the projects that put you over the limits go offline. They're no longer public, but nothing is deleted. You choose which projects stay; if you haven't, we keep the ones changed most recently.
+  - **90 days after that,** the offline projects are deleted for good, as if you'd closed your account. We'll email you before that happens too.
+  - Choose a paid plan again at any point before then, and everything comes back as it was.
+- **We don't refund the rest of a period you've already paid for.** If something went wrong on our side, or your situation is unusual, write to us. We're nice and reasonable.
 - **Prices:** if we change a plan's price, we'll tell you at least 30 days before it affects you, and you can cancel before then.
 
 Cancelling a paid plan is different from closing your account (section 7). Closing your account starts the 90 days before your data is deleted.
@@ -81,10 +89,11 @@ Cancelling a paid plan is different from closing your account (section 7). Closi
 
 ## 7. Leaving
 
-- You can export your data, and close your account, at any time.
+- You can export all your data at any time, in the admin: contributions and their details as a spreadsheet (CSV) and as JSON, your projects' settings as JSON, and every audio file and photo as it was uploaded. Nothing is locked in a format only Roundware can read. [Not built yet.]
+- You can close your account at any time.
 - After you close it, we keep your data for **90 days**, so you can export it or change your mind. Then we delete it for good. Deleted data is gone from our backups within a further 7 days.
 - We may close an account that breaks these terms (section 4), or that's been inactive for a long time. Before closing an inactive account, we'll write to its owners at least 60 days ahead.
-- If we ever have to shut Roundware down, we'll give you at least 90 days' notice to export everything.
+- If roundware.app ever has to shut down, we'll give you at least 90 days' notice to export everything. And because Roundware is open source (section 9), you won't be stranded: you, or someone you hire, can run your own Roundware server, load your export into it, and keep your projects going.
 
 ## 8. Responsibility if something goes wrong
 
@@ -98,7 +107,14 @@ This section is the most legal-sounding one, because it has to be precise.
 
 ## 9. The software is open source
 
-The Roundware software is open source; its licenses are in [the code](https://github.com/roundware). These terms cover the hosted service at roundware.app, not the software itself. You're free to run Roundware yourself under its licenses instead.
+Roundware is open source. These terms cover the hosted service at roundware.app, not the software itself.
+
+That matters for you because you're never tied to us:
+
+- you can run Roundware on your own server instead, under the software's licenses ([github.com/roundware](https://github.com/roundware));
+- if roundware.app stops for any reason, your export (section 7) can be loaded into your own Roundware, and your projects carry on.
+
+[Planned: the current version of the server and admin are being prepared for public release, with instructions for running your own and loading an export.]
 
 ## 10. Changes to these terms
 

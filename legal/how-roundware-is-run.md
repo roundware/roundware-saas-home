@@ -16,6 +16,7 @@ Roundware is a small operation. It's run by one person, with no outside funding,
   - Uploaded files aren't backed up yet.
   - Everything is hosted in the USA.
   - Contributions' files are reachable by anyone with their link.
+- **Never locked in:** you can export everything in open formats, and because Roundware is open source, you can run it yourself if roundware.app ever stops.
 - **Your call:** if your project needs guarantees we can't give, such as a support contract, certifications or European hosting, Roundware may not be right for it yet. Tell us; we'd rather say so up front.
 
 ---
@@ -53,6 +54,14 @@ Roundware is a small operation. It's run by one person, with no outside funding,
 **Embedded recorders and browser privacy.** Inside another website, some browsers (Safari especially) keep Roundware's storage apart or block it. Recording still works; the project just sees each visit as a new participant.
 
 **Participants' agreement isn't recorded yet.** Participants agree to a project's terms before they contribute, but Roundware doesn't yet store a record of when they agreed, or to which version. [Planned.]
+
+## If roundware.app stops
+
+A one-person service could end one day, through illness, money, or something else. Ideally there'd be a company behind it with a succession plan; there isn't. This is what we've done instead:
+
+- **Everything can be exported**, in formats any software can read: spreadsheets (CSV) and JSON for contributions and settings, and the original audio files and photos. [Not built yet.]
+- **The software is open source.** Anyone can run their own Roundware server and load an export into it. [Planned: the current version is being prepared for public release, with instructions.]
+- **At least 90 days' notice** before roundware.app shuts down, to export.
 
 ## If something goes wrong
 
