@@ -118,6 +118,7 @@ These are all needed for Roundware to work, or they remember your own choices, s
 - **Accounts:** until you or your organization delete them.
 - **A project's contributions and activity:** for as long as the organization keeps the project. Organizations can delete contributions, activity and whole projects at any time.
 - **Your name and email as a participant:** until you ask to have them removed, or the organization clears them.
+- **The server's request log:** it contains no IP addresses and is overwritten as it fills, usually within a few weeks.
 - **When an organization closes its account:** we keep its data for 90 days, so it can be exported or the account reopened, and then delete it for good.
 - **Backups:** our database provider keeps daily backups for 7 days, so deleted data is fully gone within 7 days of being deleted. (Uploaded files aren't backed up yet; see [How Roundware is run](how-roundware-is-run.md).)
 

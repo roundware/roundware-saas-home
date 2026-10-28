@@ -50,7 +50,7 @@ The documents describe Roundware as it will be once these are done. Each is mark
 14. **Release the v3 server and admin as open source**, with instructions for running your own and importing an export (Terms §7 and §9, How Roundware is run).
 15. **Cancelling a paid plan over the free limits** (Terms §5): reminder emails; after 60 days the projects over the limits go offline (the organization picks which, else the most recently changed stay); 90 days later they're deleted; re-subscribing brings everything back.
 16. ~~**No tracking in Roundware's emails.**~~ Verified 2026-10-28 (Halsey): open and click tracking are off in Resend for notify.roundware.app. The Privacy Policy says so (§3, from team members).
-17. **How long the server keeps visit logs.** The Droplet's logs record each request's IP address. Decide how long they're kept (and make it so: log rotation), then state it in the Privacy Policy (§8, how long things are kept).
+17. ~~**How long the server keeps visit logs.**~~ Done 2026-10-28: checked on the Droplet, the API's log shows only Caddy's internal address, and Caddy keeps no request log, so no visitor IP is logged. Docker kept the logs forever; they now rotate (5 × 10 MB per service, server `docker-compose.prod.yml`, live on the next deploy). Privacy §8 says so.
 
 ### Choices made in drafting (easy to change)
 
