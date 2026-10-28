@@ -14,6 +14,7 @@ These terms are between **Halsey Solutions, LLC** ("we", "Roundware") and the or
 - Paid plans (when there are any) can be cancelled at any time, and stay active until the end of the period you paid for. If you're then over the free plan's limits, you get 60 days to sort it out before anything goes offline, and nothing is deleted without plenty of warning.
 - You can export all your data and leave at any time, in open formats (spreadsheets, JSON and the original files).
 - Roundware is open source. If roundware.app ever stops, you can run Roundware yourself and carry on.
+- The name "Roundware" is a trademark. Say your project is made with Roundware, but don't name your own service after it.
 - After you close your account, we keep your data for 90 days, then delete it.
 - If we change these terms in a way that matters, we'll tell you at least 30 days ahead.
 - Massachusetts law applies.
@@ -115,6 +116,15 @@ That matters for you because you're never tied to us:
 - if roundware.app stops for any reason, your export (section 7) can be loaded into your own Roundware, and your projects carry on.
 
 [Planned: the current version of the server and admin are being prepared for public release, with instructions for running your own and loading an export.]
+
+### The name
+
+"Roundware" and the Roundware logo are trademarks of Halsey Burgund ("Roundware" is a registered trademark). Halsey Solutions, LLC uses them with his permission. The software's licenses cover its code, not its name. So:
+
+- you're welcome to say that your project is made with Roundware or runs on Roundware, and to link to us;
+- if you run your own copy of the software, give your service its own name. Don't present it as Roundware or roundware.app, or use the Roundware logo as your own.
+
+[LAWYER: check this section's wording, and that the trademark's owner (Halsey Burgund) and the operator (Halsey Solutions, LLC) are described correctly.]
 
 ## 10. Changes to these terms
 

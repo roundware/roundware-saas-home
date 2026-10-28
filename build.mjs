@@ -128,6 +128,7 @@ function page(layout, { title, description, body, path, wide = false }) {
     .replaceAll("{{admin}}", site.admin)
     .replaceAll("{{org}}", site.org)
     .replaceAll("{{github}}", site.github)
+    .replaceAll("{{repo}}", site.repo)
     .replaceAll("{{contact_email}}", site.contactEmail)
     .replaceAll("{{privacy_email}}", site.privacyEmail)
     .replaceAll("{{year}}", String(new Date().getFullYear()))
@@ -182,7 +183,7 @@ export async function build() {
   for (const d of docs) {
     const { html, title, draft } = renderLegal(readFileSync(join(dir, `${d.slug}.md`), "utf8"), d.slug);
     drafts += draft ? 1 : 0;
-    const history = `<p class="history"><a href="${historyUrl(d.slug)}">Every change to this document</a>, on GitHub</p>`;
+    const history = `<p class="history"><a href="${historyUrl(d.slug)}">Every change to this document</a>, on GitHub. Reuse it, with credit, under <a href="${site.repo}/blob/main/legal/LICENSE.md">CC BY 4.0</a>.</p>`;
     const body = `<nav class="crumbs"><a href="/legal/">Governing Documents</a></nav><article class="legal">${html}${history}</article>`;
     const path = `/legal/${d.slug}/`;
     write(path, page(layout, { title, description: `${title}: ${d.for}.`, body, path }));

@@ -13,6 +13,8 @@ The documents that govern roundware.app, in plain English. Each one starts with 
 
 Roundware is run by Halsey Solutions, LLC (Massachusetts, USA). Questions: [privacy@roundware.app](mailto:privacy@roundware.app).
 
+You're welcome to reuse these documents for your own organization, with credit: they're licensed [CC BY 4.0](LICENSE.md).
+
 ---
 
 ## Status: drafts (started 2026-10-27)
@@ -25,7 +27,7 @@ Nothing here is in effect yet. Before publishing:
 - [ ] A business address for [ADDRESS]. It will be public, so a PO box or the registered agent's address is fine.
 - [ ] Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.
 - [x] ~~Create the public GitHub repository for this folder.~~ They live in roundware-saas-home (public), and the site fills in [GitHub link] with each document's history.
-- [ ] A lawyer's review: the DPA's transfer clauses (section 9), the limits of responsibility (Terms section 8), and the participant template's broadcast wording.
+- [ ] A lawyer's review: the DPA's transfer clauses (section 9), the limits of responsibility (Terms section 8), the trademark (Terms section 9, "The name"), and the participant template's broadcast wording.
 - [ ] Choose the date they take effect ([DATE]).
 
 ### Build, so that the documents are true
