@@ -21,7 +21,7 @@ Nothing here is in effect yet. Before publishing:
 
 ### Information and accounts (Halsey)
 
-- [ ] **Set up privacy@roundware.app** (DreamHost forwarding, like admin@), then **test it**: send a message from an outside address and check that it arrives.
+- [x] ~~**Set up privacy@roundware.app**, then test it.~~ Done 2026-10-28 (Halsey), with hello@roundware.app; both arrive.
 - [ ] A business address for [ADDRESS]. It will be public, so a PO box or the registered agent's address is fine.
 - [ ] Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.
 - [x] ~~Create the public GitHub repository for this folder.~~ They live in roundware-saas-home (public), and the site fills in [GitHub link] with each document's history.

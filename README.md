@@ -40,6 +40,6 @@ In pages, `{{admin}}`, `{{org}}`, `{{github}}`, `{{contact_email}}` and `{{priva
 
 - [ ] **Who has used Roundware** (home page): confirm each name, or replace the names with logos used with permission.
 - [ ] Check the home page's claims: "since 2008", and "artists, museums, schools and communities".
-- [ ] **hello@roundware.app** (contact page and footer): set it up, or change `contactEmail` in `build.mjs`. Set up **privacy@roundware.app** too, and test both from an outside address.
+- [x] ~~**hello@roundware.app** and **privacy@roundware.app**: set up and tested.~~ Done 2026-10-28.
 - [ ] The legal documents are drafts: their own checklist is in [legal/README.md](legal/README.md).
 - [ ] Then point the admin's signed-out landing page at roundware.app, so there's one public site (the admin's `/` becomes sign-in).
