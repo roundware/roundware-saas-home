@@ -183,7 +183,7 @@ export async function build() {
     const { html, title, draft } = renderLegal(readFileSync(join(dir, `${d.slug}.md`), "utf8"), d.slug);
     drafts += draft ? 1 : 0;
     const history = `<p class="history"><a href="${historyUrl(d.slug)}">Every change to this document</a>, on GitHub</p>`;
-    const body = `<nav class="crumbs"><a href="/legal/">Legal</a></nav><article class="legal">${html}${history}</article>`;
+    const body = `<nav class="crumbs"><a href="/legal/">Governing Documents</a></nav><article class="legal">${html}${history}</article>`;
     const path = `/legal/${d.slug}/`;
     write(path, page(layout, { title, description: `${title}: ${d.for}.`, body, path }));
     paths.push(path);

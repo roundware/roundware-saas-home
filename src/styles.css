@@ -21,6 +21,8 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
+  /* The footer stays at the bottom, however short the page. */
+  min-height: 100vh; display: flex; flex-direction: column;
   font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -44,6 +46,21 @@ h3 { font-size: 1.15rem; margin: 0 0 0.4em; }
 .top nav a { color: #fff; text-decoration: none; font-size: 0.92rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 500; }
 .top nav a:hover, .top nav a[aria-current] { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
 .top nav a.button { opacity: 1; text-decoration: none; }
+
+/* -- the menu ------------------------------------------------------------------ */
+.menu { position: relative; }
+.menu summary { list-style: none; cursor: pointer; display: flex; align-items: center; padding: 6px; border-radius: 8px; color: #fff; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu summary:hover, .menu[open] summary { background: rgba(255, 255, 255, 0.12); }
+.menu summary svg { width: 26px; height: 26px; fill: currentColor; display: block; }
+.menu-panel {
+  position: absolute; right: 0; top: calc(100% + 10px); min-width: 230px; z-index: 20;
+  background: var(--navy-2); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: var(--radius);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35); padding: 8px; display: flex; flex-direction: column;
+}
+.top .menu-panel a { padding: 9px 12px; border-radius: 6px; opacity: 0.92; white-space: nowrap; }
+.top .menu-panel a:hover, .top .menu-panel a[aria-current] { background: rgba(255, 255, 255, 0.1); opacity: 1; text-decoration: none; }
+.top .menu-panel a:last-child { margin-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.12); border-radius: 0 0 6px 6px; padding-top: 12px; }
 .bottom { background: var(--navy); color: rgba(255, 255, 255, 0.78); font-size: 0.9rem; margin-top: 72px; }
 .bottom .bar { padding-top: 30px; padding-bottom: 30px; flex-wrap: wrap; }
 .bottom p { margin: 0; opacity: 0.85; }
@@ -71,7 +88,7 @@ main.wide + .bottom { margin-top: 0; }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 28px; }
 
 /* -- ordinary pages ---------------------------------------------------------- */
-main { display: block; }
+main { display: block; flex: 1 0 auto; width: 100%; }
 main:not(.wide) { max-width: var(--text); margin: 0 auto; padding: 48px 20px 0; }
 main:not(.wide):has(.plans) { max-width: var(--max); }
 .lede { font-size: 1.15rem; color: var(--muted); }

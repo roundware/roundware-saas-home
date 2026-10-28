@@ -14,7 +14,7 @@ npm run build      # into dist/
 
 | Where | What |
 |---|---|
-| `src/pages/*.html` | One page each. The home page's copy is the admin landing page's, as Halsey edited it: keep the two in step until the admin's goes. Pages: `index` is `/`, `pricing` is `/pricing/`, `legal` is `/legal/`. The first two lines give its title and description. |
+| `src/pages/*.html` | One page each. The home page's copy is the admin landing page's, as Halsey edited it: keep the two in step until the admin's goes. `legal` is the Governing Documents page (its address stays `/legal/`). Pages: `index` is `/`, `pricing` is `/pricing/`, `legal` is `/legal/`. The first two lines give its title and description. |
 | `src/layout.html` | The header, footer and `<head>` around every page |
 | `src/styles.css` | All the styles |
 | `src/assets/` | Logo, background, phone screenshots, share image |
@@ -39,6 +39,7 @@ In pages, `{{admin}}`, `{{org}}`, `{{github}}`, `{{contact_email}}` and `{{priva
 ## Before it goes live
 
 - [ ] A section of organizations that have used Roundware (the backlog's logo section), once their logos can be used.
+- [ ] A section of projects made with Roundware: a picture, a line and a link for each. Halsey chooses the projects.
 
 - [x] ~~**hello@roundware.app** and **privacy@roundware.app**: set up and tested.~~ Done 2026-10-28.
 - [ ] The legal documents are drafts: their own checklist is in [legal/README.md](legal/README.md).

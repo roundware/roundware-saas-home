@@ -28,6 +28,19 @@
         <nav aria-label="Main">
           <a class="text" href="{{admin}}/login">Sign In</a>
           <a class="button small" href="{{admin}}/register">Sign Up</a>
+          <!-- The menu: plain HTML (details/summary), since the site runs no scripts. -->
+          <details class="menu">
+            <summary aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg></summary>
+            <div class="menu-panel">
+              <a href="/legal/">Governing Documents</a>
+              <a href="/pricing/">Pricing</a>
+              <a href="/contact/">Contact</a>
+              <a href="/legal/privacy/">Privacy</a>
+              <a href="/legal/terms/">Terms</a>
+              <a href="{{github}}">GitHub</a>
+              <a href="{{org}}">Roundware.org</a>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
@@ -38,13 +51,13 @@
       <div class="bar">
         <p>&copy; {{year}} Roundware. The server and framework are open source (AGPL-3.0).</p>
         <nav aria-label="Footer">
-          <a href="{{org}}">About</a>
-          <a href="{{github}}">GitHub</a>
+          <a href="/legal/">Governing Documents</a>
           <a href="/pricing/">Pricing</a>
           <a href="/contact/">Contact</a>
           <a href="/legal/privacy/">Privacy</a>
           <a href="/legal/terms/">Terms</a>
-          <a href="/legal/">Legal</a>
+          <a href="{{github}}">GitHub</a>
+          <a href="{{org}}">Roundware.org</a>
         </nav>
       </div>
     </footer>
