@@ -76,35 +76,39 @@ async function plans() {
   }
 }
 
+// The plan cards as the admin's landing page has them (its planFeatures
+// and formatPrice, src/utilities/plans.ts): keep them in step.
 const UNLIMITED = -1;
-const count = (n, one, many = `${one}s`) =>
-  n === UNLIMITED ? `Unlimited ${many}` : `${n.toLocaleString("en-US")} ${n === 1 ? one : many}`;
-const storage = (mb) => (mb === UNLIMITED ? "Unlimited storage" : mb >= 1000 ? `${mb / 1000} GB of storage` : `${mb} MB of storage`);
-const minutes = (s) => (s % 60 === 0 ? `${s / 60} minute${s === 60 ? "" : "s"}` : `${s} seconds`);
+const count = (n, one, many = `${one}s`) => `${n.toLocaleString("en-US")} ${n === 1 ? one : many}`;
+
+function planFeatures(p) {
+  return [
+    p.max_projects === UNLIMITED ? "Unlimited projects" : count(p.max_projects, "project"),
+    p.max_contributions === UNLIMITED
+      ? "Unlimited contributions"
+      : `${count(p.max_contributions, "contribution")}, across all projects`,
+    p.max_members === UNLIMITED ? "Unlimited team members" : count(p.max_members, "team member"),
+    ...(p.allows_custom_domain ? ["A custom URL for each project"] : []),
+    ...(p.allows_custom_css ? ["Custom CSS"] : []),
+  ];
+}
 
 function planCards(list) {
   const firstPaid = list.findIndex((p) => p.price_cents_monthly > 0);
   return list
     .map((p, i) => {
       const free = p.price_cents_monthly === 0;
-      const features = [
-        count(p.max_projects, "project"),
-        `${count(p.max_contributions, "contribution")}, across all projects`,
-        storage(p.max_storage_mb),
-        `Recordings up to ${minutes(p.max_recording_length_sec)}`,
-        count(p.max_members, "team member"),
-        ...(p.allows_custom_domain ? ["Your own web address for each project"] : []),
-        ...(p.allows_custom_css ? ["Custom CSS"] : []),
-      ];
+      // As the admin's: the first paid plan's button is filled, the others outlined.
+      const kind = i === firstPaid ? "button" : "button outline";
       const action = free
-        ? `<a class="button" href="${site.admin}/register">Start free</a>`
+        ? `<a class="${kind}" href="${site.admin}/register">Get Started Free</a>`
         : site.paidPlansOpen
-          ? `<a class="button" href="${site.admin}/register">Choose ${esc(p.name)}</a>`
-          : `<span class="button disabled" aria-disabled="true">Coming soon</span>`;
+          ? `<a class="${kind}" href="${site.admin}/register">Choose ${esc(p.name)}</a>`
+          : `<span class="${kind} disabled" aria-disabled="true">Coming Soon</span>`;
       return `<div class="plan${i === firstPaid ? " featured" : ""}">
   <h3>${esc(p.name)}</h3>
-  <p class="price"><strong>$${Math.round(p.price_cents_monthly / 100)}</strong> ${free ? "forever" : "a month"}</p>
-  <ul>${features.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>
+  <p class="price"><strong>${free ? "$0" : `$${Math.round(p.price_cents_monthly / 100)}`}</strong> ${free ? "forever" : "/month"}</p>
+  <ul>${planFeatures(p).map((f) => `<li>${esc(f)}</li>`).join("")}</ul>
   ${action}
 </div>`;
     })
@@ -114,7 +118,7 @@ function planCards(list) {
 // -- pages ---------------------------------------------------------------------
 
 function page(layout, { title, description, body, path, wide = false }) {
-  const full = title ? `${title} · Roundware` : "Roundware: location-based audio, made together";
+  const full = title ? `${title} · Roundware` : "Roundware: Build Location-Based Audio Experiences";
   return layout
     .replaceAll("{{title}}", esc(full))
     .replaceAll("{{description}}", esc(description))

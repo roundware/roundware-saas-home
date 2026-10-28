@@ -14,7 +14,7 @@ npm run build      # into dist/
 
 | Where | What |
 |---|---|
-| `src/pages/*.html` | One page each: `index` is `/`, `pricing` is `/pricing/`, `legal` is `/legal/`. The first two lines give its title and description. |
+| `src/pages/*.html` | One page each. The home page's copy is the admin landing page's, as Halsey edited it: keep the two in step until the admin's goes. Pages: `index` is `/`, `pricing` is `/pricing/`, `legal` is `/legal/`. The first two lines give its title and description. |
 | `src/layout.html` | The header, footer and `<head>` around every page |
 | `src/styles.css` | All the styles |
 | `src/assets/` | Logo, background, phone screenshots, share image |
@@ -38,8 +38,8 @@ In pages, `{{admin}}`, `{{org}}`, `{{github}}`, `{{contact_email}}` and `{{priva
 
 ## Before it goes live
 
-- [ ] **Who has used Roundware** (home page): confirm each name, or replace the names with logos used with permission.
-- [ ] Check the home page's claims: "since 2008", and "artists, museums, schools and communities".
+- [ ] A section of organizations that have used Roundware (the backlog's logo section), once their logos can be used.
+
 - [x] ~~**hello@roundware.app** and **privacy@roundware.app**: set up and tested.~~ Done 2026-10-28.
 - [ ] The legal documents are drafts: their own checklist is in [legal/README.md](legal/README.md).
 - [ ] Then point the admin's signed-out landing page at roundware.app, so there's one public site (the admin's `/` becomes sign-in).
