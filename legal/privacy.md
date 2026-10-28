@@ -21,7 +21,7 @@ The rest of this page gives the detail.
 
 ## 1. Who we are
 
-Roundware is a platform for participatory audio projects: people record sounds, stories and comments, and others listen to them, often on a map. Roundware is run by **Halsey Solutions, LLC**, [ADDRESS], Massachusetts, USA ("we"). You can reach us at [privacy@roundware.app](mailto:privacy@roundware.app).
+Roundware is a platform for participatory audio projects: people record sounds, stories and comments, and others listen to them, often on a map. Roundware is run by **Halsey Solutions, LLC**, a company in Massachusetts, USA ("we"). You can reach us at [privacy@roundware.app](mailto:privacy@roundware.app).
 
 The Roundware software is open source. You can read exactly what it does with data at [github.com/roundware](https://github.com/roundware).
 
@@ -156,5 +156,6 @@ We'll post every change here, with its date. The full history is public on [GitH
 ## 14. Contact
 
 Halsey Solutions, LLC — Roundware
-[ADDRESS]
-[privacy@roundware.app](mailto:privacy@roundware.app)
+Massachusetts, USA
+Privacy and your data: [privacy@roundware.app](mailto:privacy@roundware.app)
+Everything else: [hello@roundware.app](mailto:hello@roundware.app)

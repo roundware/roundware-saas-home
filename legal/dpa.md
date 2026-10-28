@@ -91,5 +91,6 @@ Where this agreement and the Terms of Service disagree about personal data, this
 ## 13. Contact
 
 Halsey Solutions, LLC — Roundware
-[ADDRESS]
-[privacy@roundware.app](mailto:privacy@roundware.app)
+Massachusetts, USA
+Privacy and your data: [privacy@roundware.app](mailto:privacy@roundware.app)
+Everything else: [hello@roundware.app](mailto:hello@roundware.app)

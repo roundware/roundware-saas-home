@@ -24,7 +24,7 @@ Nothing here is in effect yet. Before publishing:
 ### Information and accounts (Halsey)
 
 - [x] ~~**Set up privacy@roundware.app**, then test it.~~ Done 2026-10-28 (Halsey), with hello@roundware.app; both arrive.
-- [ ] A business address for [ADDRESS]. It will be public, so a PO box or the registered agent's address is fine.
+- [x] ~~A business address.~~ Decided 2026-10-28 (Halsey): none. The documents give Halsey Solutions, LLC, Massachusetts, and the two email addresses; the Terms say notices go by email. A postal address would be needed for marketing email (CAN-SPAM), if that ever starts. For the lawyer: whether an EU representative (GDPR Art. 27) is needed as EU projects grow.
 - [x] ~~Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.~~ Verified 2026-10-28 (Halsey).
 - [x] ~~Create the public GitHub repository for this folder.~~ They live in roundware-saas-home (public), and the site fills in [GitHub link] with each document's history.
 - [ ] A lawyer's review: the DPA's transfer clauses (section 9), the limits of responsibility (Terms section 8), the trademark (Terms section 9, "The name"), and the participant template's broadcast wording.

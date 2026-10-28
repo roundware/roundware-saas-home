@@ -74,4 +74,4 @@ We decide how your contribution and details are used, as these terms say. Roundw
 
 ## 8. Contact
 
-[ORGANIZATION], [ADDRESS], [CONTACT EMAIL]
+[ORGANIZATION], [CONTACT EMAIL] [and a postal address, if you want to give one]

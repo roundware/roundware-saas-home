@@ -141,5 +141,8 @@ We'll post every change here, with its date; the full history is public on [GitH
 ## 12. Contact
 
 Halsey Solutions, LLC — Roundware
-[ADDRESS]
-[privacy@roundware.app](mailto:privacy@roundware.app)
+Massachusetts, USA
+Privacy and your data: [privacy@roundware.app](mailto:privacy@roundware.app)
+Everything else: [hello@roundware.app](mailto:hello@roundware.app)
+
+Roundware has no public postal address: we're reached by email. Notices to us under these terms, including formal ones, can be sent to [hello@roundware.app](mailto:hello@roundware.app), and we'll reply to confirm we've received them. We send notices to you by email, to your organization's owners.
