@@ -36,14 +36,14 @@ The documents describe Roundware as it will be once these are done. Each is mark
 
 1. ~~**Random names for uploaded files.**~~ Done 2026-10-27: what and when, plus a random part (fill in [DEPLOY DATE] in How Roundware is run when deployed).
 2. ~~**Delete a participant.**~~ Done 2026-10-27: the participant's page in the admin, "Delete for good", for this project or all of the organization's.
-3. **Clear listening history and events.** Organizations can delete these for a project (Privacy §8).
+3. ~~**Clear listening history and events.**~~ Done 2026-10-28 (server `51244c3`, admin `7b1b437`): Organization settings › Listening activity, all or older than a date (Privacy §8).
 4. **Google Analytics asks first.** A plain prompt; GA loads only on yes. A project setting lets an organization handle consent itself (Privacy §7).
 5. **Record participants' agreement.** When, and to which version of the project's terms (How Roundware is run).
 6. Done 2026-10-27 (Organization settings: the whole organization or one project, and Import beside it). **Export everything, easily.** An organization's data in open formats in one download: contributions and their details as CSV and JSON, projects' settings as JSON, and every original audio file and photo (Terms §7, DPA §8). Today there's a CSV of contributions and single-file downloads. It should load into a self-hosted Roundware (item 14).
 7. Done 2026-10-27, with deleting your own account. **Close an account.** Owners close their organization's account. It's held 90 days, then deleted with its media and activity log. Team members can also delete their own accounts (Terms §7).
 8. Done 2026-10-27 (deleted with it). **The activity log goes with its organization.** Today it outlives a deleted organization, with team members' emails.
 9. ~~**Self-host the map's cluster images.**~~ Done 2026-10-28 (web app `b507852`; live once deployed): served by the web app, not github.com. The permission help video also moved to YouTube's no-cookie address.
-10. **Links.** These documents linked from the landing page, sign-up (with an "I agree to the Terms" checkbox), the admin, and the web app and embed (a Privacy link beside the project's terms).
+10. **Links.** Partly done 2026-10-28: sign-up and accepting an invitation ask "I agree to the Terms of Service and Privacy Policy" and record when and which version (server `51244c3`, admin `7b1b437`); the admin's sign-in page and menu link both; the web app and embed show "Roundware hosts this project. Roundware's Privacy Policy" under each project's terms (web app `7a6fbde`). Still to do: the landing page link once the admin's landing page goes.
 11. **The participant terms template offered** when an organization writes its project's terms.
 12. ~~**Pages on roundware.app/legal** showing these files.~~ Done 2026-10-28 (roundware-saas-home); live once the site is deployed.
 13. **Backups of uploaded files.** When they're done, update How Roundware is run, Privacy §8 and Terms §6.
