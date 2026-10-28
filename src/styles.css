@@ -64,6 +64,7 @@ h3 { font-size: 1.15rem; margin: 0 0 0.4em; }
 .bottom { background: var(--navy); color: rgba(255, 255, 255, 0.78); font-size: 0.9rem; margin-top: 72px; }
 .bottom .bar { padding-top: 30px; padding-bottom: 30px; flex-wrap: wrap; }
 .bottom p { margin: 0; opacity: 0.85; }
+.bottom p a { text-transform: none; font-size: inherit; letter-spacing: 0; opacity: 1; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
 .bottom nav { display: flex; flex-wrap: wrap; gap: 6px 22px; }
 .bottom a { color: #fff; opacity: 0.8; text-decoration: none; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.03em; }
 .bottom a:hover { opacity: 1; text-decoration: underline; }

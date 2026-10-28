@@ -119,7 +119,7 @@ That matters for you because you're never tied to us:
 
 ### The name
 
-"Roundware" and the Roundware logo are trademarks of Halsey Burgund ("Roundware" is a registered trademark). Halsey Solutions, LLC uses them with his permission. The software's licenses cover its code, not its name. So:
+"Roundware" and the Roundware logo are trademarks of Halsey Burgund ("Roundware" is a [registered trademark](https://tsdr.uspto.gov/#caseNumber=85480181&caseType=SERIAL_NO&searchType=statusSearch), US serial number 85480181). Halsey Solutions, LLC uses them with his permission. The software's licenses cover its code, not its name. So:
 
 - you're welcome to say that your project is made with Roundware or runs on Roundware, and to link to us;
 - if you run your own copy of the software, give your service its own name. Don't present it as Roundware or roundware.app, or use the Roundware logo as your own.
