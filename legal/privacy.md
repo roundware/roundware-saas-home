@@ -40,7 +40,7 @@ So if you contributed to a project, the organization is the first place to go wi
 - Your email address, name, and password. We never store the password itself, only a scrambled version of it (an argon2 hash) that can't be turned back into the password.
 - Which organizations and projects you belong to, and your role.
 - A log of changes made in the admin (for example "Jane edited Project X"), so a team can see who did what. It shows your email address to your team.
-- The email we send you: account emails (confirming your address, resetting your password, invitations) and the notifications you choose.
+- The email we send you: account emails (confirming your address, resetting your password, invitations) and the notifications you choose. They carry no tracking: we don't know whether you opened them or what you clicked.
 
 ### From participants and listeners
 

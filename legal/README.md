@@ -25,7 +25,7 @@ Nothing here is in effect yet. Before publishing:
 
 - [x] ~~**Set up privacy@roundware.app**, then test it.~~ Done 2026-10-28 (Halsey), with hello@roundware.app; both arrive.
 - [ ] A business address for [ADDRESS]. It will be public, so a PO box or the registered agent's address is fine.
-- [ ] Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.
+- [x] ~~Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.~~ Verified 2026-10-28 (Halsey).
 - [x] ~~Create the public GitHub repository for this folder.~~ They live in roundware-saas-home (public), and the site fills in [GitHub link] with each document's history.
 - [ ] A lawyer's review: the DPA's transfer clauses (section 9), the limits of responsibility (Terms section 8), the trademark (Terms section 9, "The name"), and the participant template's broadcast wording.
 - [ ] Choose the date they take effect ([DATE]).
@@ -49,7 +49,7 @@ The documents describe Roundware as it will be once these are done. Each is mark
 13. **Backups of uploaded files.** When they're done, update How Roundware is run, Privacy §8 and Terms §6.
 14. **Release the v3 server and admin as open source**, with instructions for running your own and importing an export (Terms §7 and §9, How Roundware is run).
 15. **Cancelling a paid plan over the free limits** (Terms §5): reminder emails; after 60 days the projects over the limits go offline (the organization picks which, else the most recently changed stay); 90 days later they're deleted; re-subscribing brings everything back.
-16. **No tracking in Roundware's emails.** Check that open and click tracking are off in Resend for notify.roundware.app, so sign-up, invitation and notification emails carry no tracking images or rewritten links. Then say so in the Privacy Policy.
+16. ~~**No tracking in Roundware's emails.**~~ Verified 2026-10-28 (Halsey): open and click tracking are off in Resend for notify.roundware.app. The Privacy Policy says so (§3, from team members).
 17. **How long the server keeps visit logs.** The Droplet's logs record each request's IP address. Decide how long they're kept (and make it so: log rotation), then state it in the Privacy Policy (§8, how long things are kept).
 
 ### Choices made in drafting (easy to change)
