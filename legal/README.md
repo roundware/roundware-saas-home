@@ -1,6 +1,6 @@
 # Roundware legal documents
 
-The documents that govern roundware.app, in plain English. Each one starts with a short summary, and the detail follows. They're kept here in public, so every change is dated and visible.
+The documents that govern roundware.app, in plain English. Each one starts with a short summary, and the detail follows. They're kept here in public, so every change is dated and visible. The site shows them at [roundware.app/legal](https://roundware.app/legal/).
 
 | Document | For |
 |---|---|
@@ -24,7 +24,7 @@ Nothing here is in effect yet. Before publishing:
 - [ ] **Set up privacy@roundware.app** (DreamHost forwarding, like admin@), then **test it**: send a message from an outside address and check that it arrives.
 - [ ] A business address for [ADDRESS]. It will be public, so a PO box or the registered agent's address is fine.
 - [ ] Sentry: check the account's data region (US or EU) and that "Prevent storing of IP addresses" is on for the web app and admin projects.
-- [ ] Create the public GitHub repository for this folder, and fill in [GitHub link].
+- [x] ~~Create the public GitHub repository for this folder.~~ They live in roundware-saas-home (public), and the site fills in [GitHub link] with each document's history.
 - [ ] A lawyer's review: the DPA's transfer clauses (section 9), the limits of responsibility (Terms section 8), and the participant template's broadcast wording.
 - [ ] Choose the date they take effect ([DATE]).
 
@@ -43,7 +43,7 @@ The documents describe Roundware as it will be once these are done. Each is mark
 9. **Self-host the map's cluster images.** They're loaded from github.com, which then sees visitors' IP addresses.
 10. **Links.** These documents linked from the landing page, sign-up (with an "I agree to the Terms" checkbox), the admin, and the web app and embed (a Privacy link beside the project's terms).
 11. **The participant terms template offered** when an organization writes its project's terms.
-12. **Pages on roundware.app/legal** showing these files.
+12. ~~**Pages on roundware.app/legal** showing these files.~~ Done 2026-10-28 (roundware-saas-home); live once the site is deployed.
 13. **Backups of uploaded files.** When they're done, update How Roundware is run, Privacy §8 and Terms §6.
 14. **Release the v3 server and admin as open source**, with instructions for running your own and importing an export (Terms §7 and §9, How Roundware is run).
 15. **Cancelling a paid plan over the free limits** (Terms §5): reminder emails; after 60 days the projects over the limits go offline (the organization picks which, else the most recently changed stay); 90 days later they're deleted; re-subscribing brings everything back.

@@ -1,6 +1,4 @@
-# roundware.app on Netlify. The build needs the legal documents: set
-# LEGAL_REPO (and LEGAL_REPO_URL for the "every change" links) in the
-# site's environment once the roundware-legal repository is on GitHub.
+# roundware.app on Netlify. Everything the build needs is in this repository.
 [build]
   command = "npm run build"
   publish = "dist"

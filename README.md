@@ -19,28 +19,27 @@ npm run build      # into dist/
 | `src/styles.css` | All the styles |
 | `src/assets/` | Logo, background, phone screenshots, share image |
 | `src/plans.json` | The plans as last fetched (see below) |
+| `legal/` | The legal documents, in Markdown: the one source for them (see below) |
 
 In pages, `{{admin}}`, `{{org}}`, `{{github}}`, `{{contact_email}}` and `{{privacy_email}}` are filled in from `site` at the top of `build.mjs`.
 
 ## Where things come from
 
-- **Legal documents:** the [roundware-legal](../roundware-legal) repository is the one source. The build reads `../roundware-legal` when it's next to this folder. Otherwise (on Netlify) it clones `LEGAL_REPO`. Each document becomes `/legal/<name>/`, and the list on `/legal/` follows the legal README's table. Links between the documents point at their pages here. With `LEGAL_REPO_URL` set, "[GitHub link]" becomes a link to each document's history. **A change to a legal document goes live on the next deploy of this site.**
+- **Legal documents:** `legal/*.md`, with their own [README](legal/README.md) (the list of documents, and the checklist before they take effect). They came from a separate roundware-legal repository on 2026-10-28, history included. Each document becomes `/legal/<name>/`, and the list on `/legal/` follows the table in `legal/README.md`. Links between the documents point at their pages here. "[GitHub link]", and the link at the foot of each page, go to that document's history in this repository. That's why the repository is public: every change to the documents is dated and visible. **A change to a legal document goes live when it's pushed.**
 - **Plans and prices:** fetched from the server at build time (`PLANS_URL`, default `https://api.roundware.app/api/3/billing/plans/`), so they can't drift from the real ones. If the server can't be reached, the last copy (`src/plans.json`) is used. **Changing a plan means redeploying this site.** While `paidPlansOpen` is false in `build.mjs`, paid plans say "Coming soon".
 
 ## Netlify
 
 - Build command `npm run build`, publish directory `dist` (both in `netlify.toml`).
-- Environment variables, once roundware-legal is on GitHub:
-  - `LEGAL_REPO`: its clone address, e.g. `https://github.com/roundware/roundware-legal.git`
-  - `LEGAL_REPO_URL`: its page, e.g. `https://github.com/roundware/roundware-legal`
+- No environment variables are needed. `PLANS_URL` can point the plans at another server.
 - Domains: `roundware.app` as the primary domain, with `www.roundware.app` redirecting to it. In DNS, the bare `roundware.app` and `www` must point at Netlify. The wildcard `*.roundware.app` stays on the Droplet for projects' sites, and `admin` and `api` keep their own records. A specific record beats the wildcard, so `www` is safe to point here.
 - `netlify.toml` also sets short redirects (`/privacy`, `/terms`, `/login`, `/signup`) and security headers. The site runs no scripts at all.
-- To publish a change to a legal document without changing this repo, use a Netlify build hook (Site settings → Build hooks). It can be triggered from roundware-legal's GitHub Actions later.
+- Plans are read when the site builds, so after changing one on the server, trigger a deploy (Deploys → Trigger deploy).
 
 ## Before it goes live
 
 - [ ] **Who has used Roundware** (home page): confirm each name, or replace the names with logos used with permission.
 - [ ] Check the home page's claims: "since 2008", and "artists, museums, schools and communities".
 - [ ] **hello@roundware.app** (contact page and footer): set it up, or change `contactEmail` in `build.mjs`. Set up **privacy@roundware.app** too, and test both from an outside address.
-- [ ] The legal documents are drafts: their own checklist is in roundware-legal's README.
+- [ ] The legal documents are drafts: their own checklist is in [legal/README.md](legal/README.md).
 - [ ] Then point the admin's signed-out landing page at roundware.app, so there's one public site (the admin's `/` becomes sign-in).

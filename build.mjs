@@ -5,16 +5,14 @@
 //   npm run dev            build, serve on http://localhost:4321, rebuild on change
 //
 // Pages are HTML in src/pages/, wrapped in src/layout.html. The legal pages
-// come from the roundware-legal repository, so its Markdown files stay the
-// one source: ../roundware-legal next to this folder when there is one, else
-// a fresh copy of LEGAL_REPO (Netlify). Plans and prices come from the
-// server at build time (PLANS_URL), with src/plans.json as the fallback.
+// are built from the Markdown in legal/, the one source for those documents.
+// Plans and prices come from the server at build time (PLANS_URL), with
+// src/plans.json as the fallback.
 // Nothing is loaded from anywhere else: no web fonts, no analytics.
 // ---------------------------------------------------------------------------
-import { execFileSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, watch, writeFileSync } from "node:fs";
 import { createServer } from "node:http";
-import { dirname, extname, join, resolve } from "node:path";
+import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
 
@@ -33,25 +31,16 @@ export const site = {
   // Paid plans can be chosen once billing is switched on (server docs/013).
   paidPlansOpen: false,
   plansUrl: process.env.PLANS_URL ?? "https://api.roundware.app/api/3/billing/plans/",
-  legalRepo: process.env.LEGAL_REPO ?? "",
-  // Where each document's history is shown: "<legalRepoUrl>/commits/main/<file>".
-  legalRepoUrl: process.env.LEGAL_REPO_URL ?? "",
+  // This repository, where each legal document's history is shown.
+  repo: "https://github.com/roundware/roundware-saas-home",
 };
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
 // -- the legal documents -------------------------------------------------------
 
-function legalDir() {
-  if (process.env.LEGAL_DIR) return resolve(process.env.LEGAL_DIR);
-  const sibling = resolve(ROOT, "../roundware-legal");
-  if (existsSync(join(sibling, "README.md"))) return sibling;
-  if (!site.legalRepo) throw new Error("No legal documents: set LEGAL_DIR or LEGAL_REPO.");
-  const dir = join(ROOT, ".legal");
-  rmSync(dir, { recursive: true, force: true });
-  execFileSync("git", ["clone", "--depth", "1", site.legalRepo, dir], { stdio: "inherit" });
-  return dir;
-}
+const LEGAL = join(ROOT, "legal");
+const historyUrl = (slug) => `${site.repo}/commits/main/legal/${slug}.md`;
 
 /** The documents, in the order the legal README's table lists them. */
 function legalDocs(dir) {
@@ -65,8 +54,7 @@ function legalDocs(dir) {
 function renderLegal(md, slug) {
   // Links between the documents point at their pages here.
   md = md.replace(/\]\(([\w-]+)\.md(#[^)]*)?\)/g, (_, s, hash = "") => `](/legal/${s}/${hash})`);
-  if (site.legalRepoUrl)
-    md = md.replace(/\[GitHub link\]/g, `[on GitHub](${site.legalRepoUrl}/commits/main/${slug}.md)`);
+  md = md.replace(/\[GitHub link\]/g, `[on GitHub](${historyUrl(slug)})`);
   const html = marked.parse(md);
   const title = (md.match(/^#\s+(.+)$/m) ?? [, slug])[1];
   const draft = /\*\*Draft\b/.test(md);
@@ -164,7 +152,7 @@ export async function build() {
 
   const layout = readFileSync(join(SRC, "layout.html"), "utf8");
   const list = await plans();
-  const dir = legalDir();
+  const dir = LEGAL;
   const docs = legalDocs(dir);
 
   const filled = (html) =>
@@ -190,9 +178,7 @@ export async function build() {
   for (const d of docs) {
     const { html, title, draft } = renderLegal(readFileSync(join(dir, `${d.slug}.md`), "utf8"), d.slug);
     drafts += draft ? 1 : 0;
-    const history = site.legalRepoUrl
-      ? `<p class="history"><a href="${site.legalRepoUrl}/commits/main/${d.slug}.md">Every change to this document</a></p>`
-      : "";
+    const history = `<p class="history"><a href="${historyUrl(d.slug)}">Every change to this document</a>, on GitHub</p>`;
     const body = `<nav class="crumbs"><a href="/legal/">Legal</a></nav><article class="legal">${html}${history}</article>`;
     const path = `/legal/${d.slug}/`;
     write(path, page(layout, { title, description: `${title}: ${d.for}.`, body, path }));
@@ -239,7 +225,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       timer = setTimeout(() => build().catch((e) => console.error(e.message)), 150);
     };
     watch(SRC, { recursive: true }, (_, f) => f !== "plans.json" && again());
-    const legal = resolve(ROOT, "../roundware-legal");
-    if (existsSync(legal)) watch(legal, again);
+    watch(LEGAL, again);
   }
 }
