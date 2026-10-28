@@ -42,7 +42,7 @@ The documents describe Roundware as it will be once these are done. Each is mark
 6. Done 2026-10-27 (Organization settings: the whole organization or one project, and Import beside it). **Export everything, easily.** An organization's data in open formats in one download: contributions and their details as CSV and JSON, projects' settings as JSON, and every original audio file and photo (Terms §7, DPA §8). Today there's a CSV of contributions and single-file downloads. It should load into a self-hosted Roundware (item 14).
 7. Done 2026-10-27, with deleting your own account. **Close an account.** Owners close their organization's account. It's held 90 days, then deleted with its media and activity log. Team members can also delete their own accounts (Terms §7).
 8. Done 2026-10-27 (deleted with it). **The activity log goes with its organization.** Today it outlives a deleted organization, with team members' emails.
-9. **Self-host the map's cluster images.** They're loaded from github.com, which then sees visitors' IP addresses.
+9. ~~**Self-host the map's cluster images.**~~ Done 2026-10-28 (web app `b507852`; live once deployed): served by the web app, not github.com. The permission help video also moved to YouTube's no-cookie address.
 10. **Links.** These documents linked from the landing page, sign-up (with an "I agree to the Terms" checkbox), the admin, and the web app and embed (a Privacy link beside the project's terms).
 11. **The participant terms template offered** when an organization writes its project's terms.
 12. ~~**Pages on roundware.app/legal** showing these files.~~ Done 2026-10-28 (roundware-saas-home); live once the site is deployed.
