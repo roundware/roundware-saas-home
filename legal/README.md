@@ -4,11 +4,11 @@ The documents that govern roundware.app, in plain English. Each one starts with 
 
 | Document | For |
 |---|---|
+| [How Roundware is run](how-roundware-is-run.md) | What we do well, what we can't do yet, and what to know before relying on it |
 | [Privacy Policy](privacy.md) | Everyone: what Roundware collects, why, and your rights |
 | [Terms of Service](terms.md) | Organizations with a Roundware account |
 | [Data Processing Agreement](dpa.md) | Organizations: how we handle their participants' data on their behalf |
 | [Service providers](subprocessors.md) | The outside companies Roundware uses |
-| [How Roundware is run](how-roundware-is-run.md) | What we do well, what we can't do yet, and what to know before relying on it |
 | [Participant terms template](participant-terms.md) | Organizations: a starting point for their own project's terms |
 
 Roundware is run by Halsey Solutions, LLC (Massachusetts, USA). Questions: [privacy@roundware.app](mailto:privacy@roundware.app).
