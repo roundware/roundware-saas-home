@@ -1,0 +1,16 @@
+{
+  "name": "roundware.app",
+  "private": true,
+  "description": "roundware.app: the Roundware service's public site",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "marked": "18.1.2"
+  }
+}

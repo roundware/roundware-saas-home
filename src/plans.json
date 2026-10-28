@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Free",
+    "max_projects": 1,
+    "max_contributions": 50,
+    "max_storage_mb": 500,
+    "max_recording_length_sec": 60,
+    "max_members": 2,
+    "price_cents_monthly": 0,
+    "allows_custom_domain": false,
+    "allows_custom_css": false
+  },
+  {
+    "id": 2,
+    "name": "Pro",
+    "max_projects": 5,
+    "max_contributions": 2000,
+    "max_storage_mb": 10000,
+    "max_recording_length_sec": 180,
+    "max_members": 5,
+    "price_cents_monthly": 2900,
+    "allows_custom_domain": true,
+    "allows_custom_css": true
+  },
+  {
+    "id": 3,
+    "name": "Ultra",
+    "max_projects": -1,
+    "max_contributions": 50000,
+    "max_storage_mb": 100000,
+    "max_recording_length_sec": 600,
+    "max_members": 20,
+    "price_cents_monthly": 9900,
+    "allows_custom_domain": true,
+    "allows_custom_css": true
+  }
+]

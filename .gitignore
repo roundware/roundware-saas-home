@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.legal/
+.DS_Store
