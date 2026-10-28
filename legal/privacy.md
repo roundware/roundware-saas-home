@@ -47,6 +47,7 @@ So if you contributed to a project, the organization is the first place to go wi
 - **A random device ID** stored in a cookie on your device, so the project can tell your visits apart. It doesn't identify you by name.
 - **What you send**: recordings, photos (with their hidden location and camera data removed before they're stored), text, and your answers to the project's questions.
 - **Where**: the place you chose on the map, or your device's location if you allowed it. Many projects are about places, so this is usually part of the contribution.
+- **That you agreed to the project's terms**: when, and the exact text you were shown.
 - **Your name and email, only if you choose to give them.** Only the project's team sees them, and the team may get them in an email when you contribute. We keep the most recent ones you gave.
 - **How you used the project**: when you visited, what you listened to and for how long, and, if the project uses your location while you listen, where you were while listening. Organizations use this to understand how their project is used.
 - **A short description of your browser**, like "Safari on iPhone", to help with problems.
@@ -108,7 +109,7 @@ Roundware itself doesn't track you and uses no advertising cookies.
 
 These are all needed for Roundware to work, or they remember your own choices, so we don't ask for consent for them. You can clear them at any time in your browser's settings.
 
-**Google Analytics.** A project can choose to use Google Analytics to count its visitors. When it does, we ask you first and load it only if you say yes. An organization can instead tell us it handles consent itself (for example, through its own website's cookie notice). In that case asking you is the organization's responsibility. [Not built yet: see README.]
+**Google Analytics.** A project can choose to use Google Analytics to count its visitors. When it does, we ask you first and load it only if you say yes. An organization can instead tell us it handles consent itself (for example, through its own website's cookie notice). In that case asking you is the organization's responsibility. If you said yes, you can change your mind in the project's information panel.
 
 **In an embedded recorder,** your browser may keep Roundware's storage separate from the website around it, or block it. If it does, the project sees each visit as a new participant. Nothing else changes.
 

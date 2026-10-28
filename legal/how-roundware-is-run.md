@@ -28,6 +28,7 @@ Roundware is a small operation. It's run by one person, with no outside funding,
 - **Sign-ins** expire after 8 hours in the admin. Password-reset links last 1 hour, and invitations 7 days.
 - **Limits on abuse:** caps on how fast anyone can try to sign in, sign up, reset passwords or send contributions. These apply per account, per participant and per IP address.
 - **Server access** is limited to one person, with a security key rather than a password.
+- **Participants' agreement** to a project's terms is kept with each contribution: when they agreed, and the exact text they were shown, in their language. The project's team can see it on the contribution.
 - **Error reports** remove names, emails, IP addresses, cookies and form contents before they leave the browser or server.
 - **Photos** are stored without their hidden location and camera data.
 - **No visitor IP addresses** are kept in our logs.
@@ -52,8 +53,6 @@ Roundware is a small operation. It's run by one person, with no outside funding,
 **Google Maps sees visitors.** Maps are central to most projects, and they come from Google. When a map loads, Google sees the visitor's IP address. There's no practical alternative right now that's as good, but we say so here and in the [Privacy Policy](privacy.md).
 
 **Embedded recorders and browser privacy.** Inside another website, some browsers (Safari especially) keep Roundware's storage apart or block it. Recording still works; the project just sees each visit as a new participant.
-
-**Participants' agreement isn't recorded yet.** Participants agree to a project's terms before they contribute, but Roundware doesn't yet store a record of when they agreed, or to which version. [Planned.]
 
 ## If roundware.app stops
 
