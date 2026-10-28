@@ -187,6 +187,9 @@ export async function build() {
     const body = `<nav class="crumbs"><a href="/legal/">Governing Documents</a></nav><article class="legal">${html}${history}</article>`;
     const path = `/legal/${d.slug}/`;
     write(path, page(layout, { title, description: `${title}: ${d.for}.`, body, path }));
+    // The Markdown too, at /legal/<name>.md: the admin offers the participant
+    // terms template from here, so legal/ stays its one source.
+    cpSync(join(dir, `${d.slug}.md`), join(DIST, "legal", `${d.slug}.md`));
     paths.push(path);
   }
 

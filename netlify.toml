@@ -41,6 +41,14 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=31536000"
 
+# The documents' Markdown, for the admin (it offers the participant terms
+# template from /legal/participant-terms.md).
+[[headers]]
+  for = "/legal/*.md"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "text/markdown; charset=utf-8"
+
 [[headers]]
   for = "/assets/*"
   [headers.values]
