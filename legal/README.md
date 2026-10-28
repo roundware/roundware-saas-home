@@ -49,6 +49,8 @@ The documents describe Roundware as it will be once these are done. Each is mark
 13. **Backups of uploaded files.** When they're done, update How Roundware is run, Privacy §8 and Terms §6.
 14. **Release the v3 server and admin as open source**, with instructions for running your own and importing an export (Terms §7 and §9, How Roundware is run).
 15. **Cancelling a paid plan over the free limits** (Terms §5): reminder emails; after 60 days the projects over the limits go offline (the organization picks which, else the most recently changed stay); 90 days later they're deleted; re-subscribing brings everything back.
+16. **No tracking in Roundware's emails.** Check that open and click tracking are off in Resend for notify.roundware.app, so sign-up, invitation and notification emails carry no tracking images or rewritten links. Then say so in the Privacy Policy.
+17. **How long the server keeps visit logs.** The Droplet's logs record each request's IP address. Decide how long they're kept (and make it so: log rotation), then state it in the Privacy Policy (§8, how long things are kept).
 
 ### Choices made in drafting (easy to change)
 
