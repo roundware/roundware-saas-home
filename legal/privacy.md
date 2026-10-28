@@ -155,7 +155,7 @@ We'll post every change here, with its date. The full history is public on [GitH
 
 ## 14. Contact
 
-Halsey Solutions, LLC — Roundware
-Massachusetts, USA
-Privacy and your data: [privacy@roundware.app](mailto:privacy@roundware.app)
+Halsey Solutions, LLC — Roundware\
+Massachusetts, USA\
+Privacy and your data: [privacy@roundware.app](mailto:privacy@roundware.app)\
 Everything else: [hello@roundware.app](mailto:hello@roundware.app)
